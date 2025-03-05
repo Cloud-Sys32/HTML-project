@@ -14,15 +14,31 @@
 body {
     background-color:#2DAA9E
 }
-.item1 {
-  grid-column: 1 / span 3;
+.logo {
+  width:40px;
 }
-
+.navmenu {
+  display:grid;
+  grid-column: 1 / span 3;
+  position: sticky;
+  top: 0;
+}
+.sidemenu {
+  display:grid;
+  float:left;
+ width:150px;
+}
+.item3 {
+  float:left;
+  height: 784px;
+  width:1663px;
+}
 .container {
   display:grid;
   grid-template-columns:auto auto auto;
-  padding: 10px;
-  
+  grid-template-rows: 
+  padding:10px;
+  position:relative;
 }
 .container > div {
   background-color: #f1f1f1;
@@ -31,6 +47,23 @@ body {
   font-size: 30px;
   text-align: center;
 }
+.navmenu > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding:10px;
+  font-size: 30px;
+  text-align: center;
+  grid-row-end:1;
+  align-self:left;
+}
+.sidemenu > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  font-size: 30px;
+  text-align: center;
+  height:40px;
+}
+
 </style>
 
   </head>
@@ -42,16 +75,72 @@ body {
 
   <div class="container">
 
-    <div onclick="alert();" class="item1">1</div>
-    <div class="item2">2</div>
-    <div class="item3">3</div>  
-    <div class="item4">4</div>
-    <div class="item5">5</div>
-    <div class="item6">6</div>  
-    <div class="item7">7</div>
-    <div class="item8">8</div>
-    <div class="item9">9</div>
-    <div class="item10">10</div>
+    <div class="navmenu">
+        <div class="logo" onclick="alert(1);">1</div>
+        <div onclick="alert(2);">2</div>
+        <div onclick="alert(3);">3</div>
+
+
+      </div>
+    <div class="sidemenu">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+
+      </div>
+      <div class="item3" > 
+        <h2>Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. Maecenas laoreet nibh sed
+         eros sodales eleifend. Nunc at dui in dui fringilla pharetra.
+          Sed maximus, erat vel venenatis ornare, nibh lorem luctus ex,
+           nec dapibus mauris dolor sit amet elit. Proin tincidunt a
+            lorem ac tincidunt. Pellentesque augue sem, vestibulum at volutpat
+             eleifend, eleifend eu lectus. Curabitur venenatis hendrerit libero, 
+             quis luctus orci facilisis lobortis. Integer ac odio lectus.
+              Cras auctor sed ligula at vestibulum. Cras mollis venenatis sapien
+               sed malesuada. Ut blandit, velit eu malesuada pellentesque, diam 
+               augue luctus neque, hendrerit tristique lorem nunc a orci. Nam sagittis
+                efficitur erat, vitae congue turpis blandit at. <br>
+
+        Suspendisse massa eros,
+         vehicula non consequat nec, commodo posuere tortor.
+          Fusce sed iaculis quam, vel rutrum metus. Nulla at eleifend mauris,
+           sed iaculis dui. Nullam efficitur ipsum at metus dictum blandit.
+            Vestibulum pulvinar vel massa sed posuere. Curabitur quis tincidunt felis.
+             Etiam turpis nulla, vulputate pharetra tincidunt et, bibendum et dui.
+              Sed iaculis erat vitae tellus tincidunt, vel sollicitudin mi vulputate.
+               Mauris fermentum semper tellus. Cras nec nisi eu massa rutrum convallis
+                quis nec dolor. Curabitur vehicula, massa quis pretium condimentum,
+                 diam lectus viverra mauris, faucibus vulputate metus sapien at quam.
+                  Fusce nec sem eleifend, cursus enim id, pulvinar lorem. <br>
+        
+        Etiam aliquet diam lorem, non venenatis nunc pharetra pretium.
+         Maecenas sagittis enim quis libero maximus, eget iaculis tortor
+          pellentesque. Fusce facilisis, eros scelerisque sollicitudin faucibus,
+           ligula risus blandit ante, sed luctus sapien tellus nec elit. Integer
+            id accumsan dolor. Vivamus pulvinar ligula at justo finibus vestibulum.
+             Vivamus ultrices velit sem, in aliquet libero varius et. Praesent 
+             hendrerit diam vel mollis gravida. Nam varius, tortor at cursus 
+             hendrerit, nulla lectus faucibus elit, nec hendrerit massa felis sit 
+             amet felis. Vivamus tincidunt cursus risus non ullamcorper.<br>
+
+        Quisque facilisis bibendum dui tristique aliquam. Pellentesque varius
+         malesuada malesuada. Sed luctus, leo quis pretium iaculis, nunc augue
+          lacinia sapien, eu faucibus tortor sapien at eros. Mauris in mi odio.
+           Integer nec molestie risus. Suspendisse quis lorem quis neque tempor
+            porta at in justo. Phasellus nisl est, feugiat varius semper in,
+             vestibulum vel orci. Quisque sit amet dolor efficitur, dignissim
+              neque ut, congue nisi. Maecenas luctus mauris eget tempus vestibulum.
+               Ut eu bibendum odio, eu rutrum nisi. Integer at lorem lacus. Mauris
+                ac sollicitudin tellus. Cras quam dui, finibus vel urna eget,
+                 placerat tincidunt turpis. Morbi porttitor erat ut placerat 
+                 vulputate. Mauris hendrerit sagittis diam sed ultricies. Nunc
+                  volutpat libero nec faucibus ultrices. </h2>
+            </div>
+
   </div>
 
 
