@@ -11,32 +11,25 @@
     font-size:larger;
     text-align: center;
 }
-header {
-  background-color: aliceblue;
-  border: 1px solid color=black;
-  height:25px;
-  font-size:larger;
-}
 body {
     background-color:#2DAA9E
 }
+.item1 {
+  grid-column: 1 / span 3;
+}
+
 .container {
   display:grid;
-  background-color:black;
-  align-content:center;
-}
-div {
-    float: left;
-    border: 3px solid rgb(0, 0, 0);
-    background-color:#EAEAEA;
-    border-radius: 20px;
-    margin: 10px;
+  grid-template-columns:auto auto auto;
+  padding: 10px;
   
 }
-section {
-  height:50px;
-  border: 3px solid color=black;
-  background-color: blanchedalmond;
+.container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding:10px;
+  font-size: 30px;
+  text-align: center;
 }
 </style>
 
@@ -44,43 +37,24 @@ section {
 
 <body>
 
-<header>
- <h1>  hello 
- </h1>
-</header>
 
 <div class="centext" class="container">
 
-      <div>
-        <h1> Tutorials </h1>
-    </div>
+  <div class="container">
 
-      <div>
-        <h1> hello </h1>
-    </div>
-
-      <div>
-        <h1> hello </h1>
-    </div>
-
-      <div>
-        <h1> hello </h1>
-    </div>
-
-      <div>
-        <h1> hello </h1>
-    </div>
-
-      <div>
-        <h1> hello </h1>
-    </div>
+    <div onclick="alert();" class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>  
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>  
+    <div class="item7">7</div>
+    <div class="item8">8</div>
+    <div class="item9">9</div>
+    <div class="item10">10</div>
   </div>
 
 
-<section>
-  <h1> hello </h1>
-
-</section>
 
 
 
